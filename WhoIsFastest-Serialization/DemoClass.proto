@@ -1,0 +1,29 @@
+﻿syntax="proto3";
+
+option csharp_namespace="DemoClassProto";
+
+package DemoClassProto;
+
+message DemoClassArrayProto
+{
+  repeated DemoClassProto DemoClass = 1;
+}
+
+message DemoClassProto
+{
+  int32 P1=1;
+  bool P2=2;
+  string P3=3;
+  double P4=4;
+  int64 P5=5;
+  repeated DemoSubClassProto Subs=6;
+}
+
+message DemoSubClassProto
+{
+  int32 P1=1;
+  bool P2=2;
+  string P3=3;
+  double P4=4;
+  int64 P5=5;
+}
